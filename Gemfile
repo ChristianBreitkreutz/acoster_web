@@ -53,7 +53,11 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
+
+
 group :development do
+  gem "capistrano", "~> 3.10", require: false
+  gem "capistrano-rails", "~> 1.6", require: false
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 

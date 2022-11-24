@@ -1,0 +1,21 @@
+<h1> Acostər </h1>
+<p> Acosta/Acoster <p>
+<p> hn bild </p>
+<table border="1">
+   <%-@album_provider_link_list.keys.each do |album_name| %>
+   <tr>
+      <td>
+         <%= album_name %>
+      </td>
+      <td>
+         <ul>
+            <%- @album_provider_link_list[album_name.to_sym].each do |musik_provider, url| %>
+            <li><a href="<%= url%>" ><%= musik_provider%></a> </li>
+            <%-end%>
+         </ul>
+      </td>
+   </tr>
+   <%- end %>
+</table>
+komisches Impressum
+
